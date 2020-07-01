@@ -199,6 +199,8 @@ a:hover {
   color: #d35266 !important;
 }
 
+/***************** USER PROFILE ****************/
+
 .user-profile-img {
   width: 35px;
   height: 35px;
@@ -224,20 +226,6 @@ a:hover {
 }
 
 /* CART */
-.cart-items {
-  top: -3px;
-  right: -10px;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  text-align: center;
-  background-color: #d35266;
-}
-
-.cart-items small {
-  top: -0.2rem;
-}
-
 .cart-items {
   top: -3px;
   right: -10px;
