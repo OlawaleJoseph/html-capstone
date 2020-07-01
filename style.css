@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+@font-face {
+  font-family: "Gotham Bold";
+  src: url('./assets/fonts/Gotham\ Bold.otf');
+}
+
+@font-face {
+  font-family: "Gotham Rounded Light";
+  src: url('./assets/fonts/Gotham\ Rounded\ Light.otf');
+}
+
+@font-face {
+  font-family: "Helvetica Neue Light";
+  src: url('./assets/fonts/Helvetica45Light_22437.ttf');
+}
+
+@font-face {
+  font-family: "Helvetica Neue Medium";
+  src: url('./assets/fonts/Helvetica65Medium_22443.ttf');
+}
+
+@font-face {
+  font-family: "Helvetica Neue Bold";
+  src: url('./assets/fonts/HelveticaNeueBold.otf');
+}
+
+body {
+  background-color: #fff;
+}
+
+.wrapper {
+  max-width: 1310px;
+  margin: 0 auto;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+.container-fluid {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.gray-text {
+  color: #888 !important;
+}
+
+.dark-text {
+  color: #353535;
+}
+
+.bg-light-gray {
+  background-color: #f8f8f8;
+}
+
+.reddish-text {
+  color: #d35266;
+}
+
+.reddish-bg {
+  background-color: #d35266;
+}
+
+.helvetica-light {
+  font-family: "Helvetica Neue Light", Arial, sans-serif;
+}
+
+.helvetica-medium {
+  font-family: "Helvetica Neue Medium", Arial, sans-serif;
+}
+
+.helvetica-bold {
+  font-family: "Helvetica Neue Bold", Arial, sans-serif;
+}
+
+.gotham-light {
+  font-family: "Gotham Rounded", Georgia, "Times New Roman", Times, serif;
+}
+
+.gotham-bold {
+  font-family: "Gotham Bold", Georgia, "Times New Roman", Times, serif;
+}
+
+.header {
+  height: 55px;
+  background-color: #353535;
+}
+
+nav {
+  height: 50px;
+}
+
+.navbar-brand {
+  width: 99px;
+  position: relative;
+  top: -16px;
+}
+
+.nav-cta {
+  position: relative;
+  top: -15px;
+}
+
+.btn,
+.plus {
+  position: relative;
+  overflow: hidden;
+  transition: all 1s;
+  z-index: 0;
+}
+
+.btn::before,
+.plus::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #353535;
+  transform: translateX(-100%);
+  overflow: hidden;
+  transition: all 1s;
+  z-index: -1;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.plus {
+  border: 1px solid #dfdfdf;
+  width: 30px;
+  height: 30px;
+  color: #d5d5d5;
+  padding-left: 9px;
+  font-size: 1.2rem;
+}
