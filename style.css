@@ -441,3 +441,58 @@ a:hover {
     margin-left: -192px;
   }
 }
+
+@media (min-width: 992px) {
+  .user-area {
+    width: 230px;
+  }
+
+  .nav-links {
+    width: 632px;
+  }
+
+  .search-area {
+    flex: 4;
+  }
+
+  .search-area label {
+    flex: 4;
+    margin-right: 2px;
+  }
+
+  .car-nav-left {
+    top: 50%;
+    left: -53px;
+  }
+
+  .car-nav-right {
+    top: 50%;
+    right: -53px;
+  }
+
+  .car-nav-left,
+  .car-nav-right {
+    display: block;
+    top: 50%;
+    font-size: 2.2rem;
+    color: #d35266;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #888;
+    border-radius: 50%;
+    z-index: 50;
+  }
+
+  .category-nav {
+    width: 6%;
+  }
+
+  .category-items {
+    max-width: 20%;
+  }
+
+  .category-items:first-child {
+    margin-left: -160px;
+  }
+}
