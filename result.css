@@ -1,0 +1,92 @@
+body {
+  background-color: #f6f6f6;
+}
+
+.result-list {
+  border-left: 1px solid #dfdfdf;
+  border-right: 1px solid #dfdfdf;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.border-top {
+  border-top: 1px solid #dfdfdf;
+}
+
+.search-item {
+  border-bottom: 1px solid #dfdfdf;
+  border-top: 1px solid #dfdfdf;
+}
+
+.card-text {
+  font-size: 15px;
+}
+
+.plus {
+  border: 1px solid #dfdfdf;
+  width: 30px;
+  height: 30px;
+  color: #d5d5d5;
+  padding-left: 9px;
+  font-size: 1.2rem;
+}
+
+.light-gray {
+  color: #b1a9ac;
+}
+
+.more-item-info-list {
+  position: absolute;
+  right: 40px;
+  top: -43px;
+  width: 160px;
+  z-index: 100;
+  background-color: #fff;
+  display: none;
+}
+
+.more-item-info-list::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  top: 50px;
+  height: 14px;
+  right: -5px;
+  background-color: #fff;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+#check1:checked ~ .more-item-info-list,
+#check2:checked ~ .more-item-info-list2,
+#check3:checked ~ .more-item-info-list3,
+#check4:checked ~ .more-item-info-list4,
+#check5:checked ~ .more-item-info-list5,
+#check6:checked ~ .more-item-info-list6 {
+  display: block;
+}
+
+.pop-list a {
+  color: #353535;
+}
+
+.pop-list:hover {
+  background-color: #353535;
+}
+
+.pop-list:hover a {
+  color: #fff;
+}
+
+.pagination li a:hover {
+  background-color: #d35266 !important;
+  color: #fff !important;
+}
+
+@media (min-width: 768px) {
+  .car-img {
+    height: 100%;
+  }
+}
