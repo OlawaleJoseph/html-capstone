@@ -1,4 +1,4 @@
-# NEWSWEEK HOME PAGE CLONE
+# HTML & CSS Capstone Project
 
 > This a is an Online Car Store.
 
@@ -32,7 +32,7 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 - Clone this repo
 - cd into the cloned repo
-- Open the index.html file with any browser of your choice 
+- Open the index.html file with any browser of your choice
 
 ### Deployment
 - This simple webpage can be deployed on any web hosting platform
