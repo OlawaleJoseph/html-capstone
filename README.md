@@ -2,7 +2,7 @@
 
 > This a is an Online Car Store.
 
-![screenshot](newsweek-clone.png)
+![screenshot](Screenshot.png)
 
 Additional description about the project and its features.
 
@@ -14,7 +14,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://rawcdn.githack.com/OlawaleJoseph/html-capstone/e8de32701b41f4c1f0eb0f4ce39e999605308e6a/index.html)
 
 
 ## Getting Started
