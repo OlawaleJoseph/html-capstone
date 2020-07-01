@@ -199,8 +199,6 @@ a:hover {
   color: #d35266 !important;
 }
 
-/***************** USER PROFILE ****************/
-
 .user-profile-img {
   width: 35px;
   height: 35px;
@@ -238,4 +236,208 @@ a:hover {
 
 .cart-items small {
   top: -0.2rem;
+}
+
+.cart-items {
+  top: -3px;
+  right: -10px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #d35266;
+}
+
+.cart-items small {
+  top: -0.2rem;
+}
+
+/****************** CARD ****************/
+.card {
+  height: 305px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.item-img {
+  width: 100%;
+  height: 180px;
+}
+
+.item-info {
+  margin-bottom: 0.5rem;
+}
+
+.item-name {
+  margin-top: 0.7rem;
+  width: 70%;
+}
+
+.item-status {
+  margin-top: 0.2rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.item-location {
+  margin-bottom: 0.3rem;
+}
+
+.add-icon {
+  border: 1px solid #888;
+  font-weight: 900;
+  font-size: 1.5rem;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 2px;
+}
+
+.price {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.7rem;
+}
+
+.carousel-nav {
+  bottom: 0;
+  right: 0;
+  background-color: #353535;
+}
+
+.carousel-nav span {
+  color: #d35266;
+}
+
+.category-nav i {
+  font-size: 1.5rem;
+  top: 50%;
+}
+
+.carousel-nav span i {
+  width: 30px;
+  height: 30px;
+  font-size: 1.5rem;
+  padding-top: 2px;
+  cursor: pointer;
+}
+
+.shadow {
+  box-shadow: 0.2px 1px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.item-cta-area {
+  width: max-content;
+  border-radius: 5px;
+}
+
+.item-cta-area a:first-child {
+  border-right: 1px solid #353535;
+}
+
+.hot-ads,
+.jumbo-body {
+  max-width: 875px;
+}
+
+.section-header {
+  border-bottom: 1px solid #888;
+}
+
+.cards-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.prev {
+  left: -5px;
+}
+
+.next {
+  top: 0;
+  right: -5px;
+}
+
+.bn {
+  display: grid;
+  grid-template-columns: repeat(5, 320px);
+}
+
+.item {
+  width: 100%;
+}
+
+.bordered {
+  border: 1px solid #888;
+}
+
+.category-image {
+  width: 35px;
+}
+
+.footer-nav {
+  max-width: 450px;
+  margin: 10px auto;
+}
+
+.font-13 {
+  font-size: 13px;
+}
+
+.no-animation {
+  animation: none;
+}
+
+@media (min-width: 768px) {
+  .user-area {
+    width: 115px;
+  }
+
+  .nav-links {
+    width: 90%;
+  }
+
+  .nav-cta,
+  .navbar-brand {
+    top: 0;
+  }
+
+  .car-categories {
+    flex: 1;
+    margin-right: 2px;
+  }
+
+  .search-area {
+    flex: 3;
+  }
+
+  .search-area input {
+    flex: 3;
+  }
+
+  .search-area button {
+    flex: 1;
+  }
+
+  .card-border {
+    border: none;
+    box-shadow: none;
+  }
+
+  .category-nav {
+    height: 100%;
+    width: 11%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 99;
+  }
+
+  .category-items {
+    max-width: 35%;
+  }
+
+  .category-items:first-child {
+    margin-left: -192px;
+  }
 }
