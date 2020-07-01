@@ -113,7 +113,7 @@
         </div>
       </nav>
     </header>
-    <main role="main">
+    <main>
       <div class="jumbotron mb-0 rounded-0 jumbo">
         <div class="jumbo-body container-fluid text-white">
           <h1
@@ -149,12 +149,9 @@
                 name="search"
                 placeholder="Prefrred Location?"
               />
-              <button
-                class="btn w-100 py-2 bg-dark gray-text mt-1 mt-md-0 rounded-0 ml-md-2"
-                type="submit"
-              >
-                <a class="gray-text" href="result.html">Search</a>
-              </button>
+              <a class="gray-text position-relative btn bg-dark gray-text mt-1 mt-md-0 rounded-0 ml-md-2" href="result.html"
+                    >Search</a
+                  >
             </div>
           </div>
         </div>
@@ -177,64 +174,64 @@
           <div class="mb-2">
             <h5 class="pb-2 border-bottom">Type</h5>
             <div>
-              <input type="checkbox" name="type" value="luxury" />
-              <label for="condition">Luxury </label>
+              <input type="checkbox" name="type" value="luxury" id="luxury" />
+              <label for="luxury">Luxury </label>
             </div>
             <div>
-              <input type="checkbox" name="type" value="sedan" />
-              <label for="condition">Sedan</label>
+              <input type="checkbox" name="type" value="sedan" id="sedan" />
+              <label for="sedan">Sedan</label>
             </div>
             <div>
-              <input type="checkbox" name="type" value="saloon" />
-              <label for="condition">Saloon</label>
+              <input type="checkbox" name="type" value="saloon" id="saloon" />
+              <label for="sedan">Saloon</label>
             </div>
             <div>
-              <input type="checkbox" name="type" value="sedan" />
-              <label for="condition">Sedan</label>
+              <input type="checkbox" name="type" value="sedan" id="sedan2" />
+              <label for="sedan2">Vintage</label>
             </div>
             <div>
-              <input type="checkbox" name="type" value="2 doors" />
-              <label for="condition">2 doors</label>
+              <input type="checkbox" name="type" value="2 doors" id="d2"/>
+              <label for="d2">2 doors</label>
             </div>
             <div>
-              <input type="checkbox" name="type" value="4 doors" />
-              <label for="condition">4 doors</label>
+              <input type="checkbox" name="type" value="4 doors" id="d4"/>
+              <label for="d4">4 doors</label>
             </div>
             <div>
-              <input type="checkbox" name="type" value="electric" />
-              <label for="condition">Electric</label>
+              <input type="checkbox" name="type" value="electric" id="electric" />
+              <label for="electric">Electric</label>
             </div>
           </div>
 
           <div class="mb-2">
             <h5 class="pb-2 border-bottom">Price Range</h5>
             <div>
-              <input type="checkbox" name="price1" value="1" />
-              <label for="condition">$10,000 - $15,000</label>
+              <input type="checkbox" name="price1" value="1" id="p1"/>
+              <label for="p1">$10,000 - $15,000</label>
             </div>
             <div>
-              <input type="checkbox" name="price2" value="2" />
-              <label for="condition">$15,001 - $20,000</label>
+              <input type="checkbox" name="price2" value="2" id="p2"/>
+              <label for="p2">$15,001 - $20,000</label>
             </div>
             <div>
-              <input type="checkbox" name="price3" value="3" />
-              <label for="condition">$20,001 - $25,000</label>
+              <input type="checkbox" name="price3" value="3" id="p3" />
+              <label for="p3">$20,001 - $25,000</label>
             </div>
             <div>
-              <input type="checkbox" name="price4" value="4" />
-              <label for="condition">$25,001 - $30,000</label>
+              <input type="checkbox" name="price4" value="4" id="p4"/>
+              <label for="p4">$25,001 - $30,000</label>
             </div>
             <div>
-              <input type="checkbox" name="price5" value="5" />
-              <label for="condition">$30,001 - $35,000</label>
+              <input type="checkbox" name="price5" value="5" id="p5" />
+              <label for="p5">$30,001 - $35,000</label>
             </div>
             <div>
-              <input type="checkbox" name="price6" value="6" />
-              <label for="condition">$35,001 - $40,000</label>
+              <input type="checkbox" name="price6" value="6" id="p6" />
+              <label for="p6">$35,001 - $40,000</label>
             </div>
             <div>
-              <input type="checkbox" name="price7" value="7" />
-              <label for="condition">$40,001+</label>
+              <input type="checkbox" name="price7" value="7" id="p7" />
+              <label for="p7">$40,001+</label>
             </div>
           </div>
         </div>
@@ -249,7 +246,7 @@
                   <input
                     type="checkbox"
                     name="condition"
-                    id="used"
+                    id="used1"
                     value="used"
                   />
                   <label for="used">Used</label>
@@ -258,7 +255,7 @@
                   <input
                     type="checkbox"
                     name="condition1"
-                    id="new"
+                    id="new1"
                     value="new"
                   />
                   <label for="new">New</label>
@@ -720,7 +717,8 @@
           </div>
           <div class="car-nav"></div>
         </div>
-    </div>
+      </div>
+      </div>
     <div>
       <ul class="d-flex list-unstyled justify-content-center pagination">
         <li class="mx-2"><a class="bg-white px-2 py-1 gray-text rounded" href="#">1</a></li>
