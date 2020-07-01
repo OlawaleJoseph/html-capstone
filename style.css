@@ -143,3 +143,99 @@ a:hover {
   padding-left: 9px;
   font-size: 1.2rem;
 }
+
+.btn:hover,
+.btn:hover a,
+.plus:hover {
+  color: #fff !important;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: 1px solid #353535;
+}
+
+.btn:hover::before,
+.plus:hover::before {
+  transform: translateX(0);
+}
+
+.border-top {
+  border-top: 1px solid #dfdfdf;
+}
+
+.logo-car-image {
+  top: 6px;
+  transition: all ease-in-out 2s;
+  animation: moveCar 2s ease-out, rotateCar 0.8s 2s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveCar {
+  from {
+    left: -112%;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+@keyframes rotateCar {
+  from {
+    transform: rotateY(0);
+  }
+
+  to {
+    transform: rotateY(180deg);
+  }
+}
+
+.user-area {
+  width: 75px;
+}
+
+.nav-item .nav-link:hover {
+  color: #d35266 !important;
+}
+
+/***************** USER PROFILE ****************/
+
+.user-profile-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid #d35266;
+  overflow: hidden;
+}
+
+/* Jumbo */
+.jumbo {
+  background:
+    linear-gradient(rgba(211, 82, 102, 0.8), rgba(211, 82, 102, 0.8)),
+    url("./assets/red-ferrari-337909.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.car-categories {
+  background: #fff url("./assets/sort-down.png") no-repeat left 0.75rem center/8px 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+}
+
+/* CART */
+.cart-items {
+  top: -3px;
+  right: -10px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #d35266;
+}
+
+.cart-items small {
+  top: -0.2rem;
+}

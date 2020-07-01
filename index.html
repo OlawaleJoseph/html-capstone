@@ -113,6 +113,114 @@
         </div>
       </nav>
     </header>
+    <main role="main">
+      <div class="jumbotron rounded-0 jumbo">
+        <div class="container text-white">
+          <h1
+            class="display-3 font-weight-bold text-center position-relative jumbo-title mt-0"
+          >JOIN THE RIDE
+          </h1>
+          <p class="text-center text-capitalize">
+            buying and selling couldn't be simpler than this
+          </p>
+          <div class="position-relative d-md-flex jumbo-body mx-auto">
+            <select class="px-4 py-2 car-categories border-0" name="category">
+              <option class="text-muted py-2" value="all" selected
+                >All Catgories</option
+              >
+              <option value="sedan py-2">Sedan</option>
+              <option value="sport py-2">Saloon</option>
+              <option value="vintage py-2">Vintage</option>
+              <option value="luxury py-2">Luxury car</option>
+              <option value="bus py-2">Bus</option>
+              <option value="trucks py-2">Trucks</option>
+            </select>
+            <div class="search-area mt-2 d-md-flex mt-md-0">
+              <input
+                class="w-100 py-2 px-2 border-0 mr-1 mb-2 mb-md-0"
+                type="text"
+                name="search"
+                placeholder="What do you want to Search for?"
+              />
+              <input
+                class="w-100 py-2 px-2 border-0"
+                type="text"
+                name="search"
+                placeholder="Preferred Location?"
+              />
+              <button
+                class="btn w-100 py-2 bg-dark gray-text mt-1 mt-md-0 rounded-0 ml-md-2"
+                type="submit"
+              >
+                <a class="gray-text position-relative" href="result.html">Search</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="mb-3 container-fluid hot-ads mx-auto position-relative bg-white">
+        <header>
+          <h5 class="section-title text-uppercase text-muted bg-white">
+            hot ads
+          </h5>
+        </header>
+        <div class="car-nav car-nav-left position-absolute">
+          <i class="fas fa-angle-left"></i>
+        </div>
+        <div class="row no-gutters shadow">
+          <div class="col-md-6 col-lg-5 position-relative">
+            <img
+              src="./assets/mercedes-benz-3395531_1920.jpg"
+              class="card-img rounded-0 img-fluid"
+              alt="..."
+            />
+            <div class="carousel-nav position-absolute">
+              <span class="text-center"
+                ><i class="fas fa-angle-left"></i
+              ></span>
+              <span class="text-center"
+                ><i class="fas fa-angle-right"></i
+              ></span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-7 px-2 pl-lg-4">
+            <div class="card-body px-0">
+              <a href="#">
+                <h5 class="card-title text-capitalize reddish-text">
+                  mercedes benz (g wagon)
+                </h5>
+              </a>
+              <p class="card-text mb-0">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Provident voluptatibus velit veniam suscipit ratione error
+                beatae esse consectetur.
+              </p>
+              <p class="card-text mb-0 text-capitalize">
+                by: <span class="gray-text">john doe</span>
+              </p>
+              <p class="card-text mb-0 text-capitalize">
+                location:
+                <span class="gray-text"
+                  >san francisco,
+                  <span class="text-uppercase">ca</span> united states</span
+                >
+              </p>
+              <div class="reddish-bg rounded-1 item-cta-area">
+                <a href="#" class="btn text-white px-3 rounded-0">$45,000</a>
+                <a href="#" class="btn text-white"
+                  ><i class="fas fa-shopping-cart pr-1"></i>Purchase
+                  Details</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="car-nav car-nav-right position-absolute">
+          <i class="fas fa-angle-right"></i>
+        </div>
+      </section>
+    </main>
   </div>
   
 </body>
