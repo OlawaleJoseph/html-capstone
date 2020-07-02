@@ -53,7 +53,7 @@ h5 {
 }
 
 .dark-text {
-  color: #353535;
+  color: #383838;
 }
 
 .bg-light-gray {
@@ -90,7 +90,7 @@ h5 {
 
 .header {
   height: 55px;
-  background-color: #353535;
+  background-color: #383838;
 }
 
 nav {
@@ -124,7 +124,7 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #353535;
+  background-color: #383838;
   transform: translateX(-100%);
   overflow: hidden;
   transition: all 1s;
@@ -152,7 +152,7 @@ a:hover {
 }
 
 .btn:hover {
-  border: 1px solid #353535;
+  border: 1px solid #383838;
 }
 
 .btn:hover::before,
@@ -213,13 +213,13 @@ a:hover {
 .jumbo {
   background:
     linear-gradient(rgba(211, 82, 102, 0.8), rgba(211, 82, 102, 0.8)),
-    url("./assets/red-ferrari-337909.jpg");
+    url("./assets/images/red-ferrari-337909.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .car-categories {
-  background: #fff url("./assets/sort-down.png") no-repeat left 0.75rem center/8px 10px;
+  background: #fff url("./assets/images/sort-down.png") no-repeat left 0.75rem center/8px 10px;
   -webkit-appearance: none;
   -moz-appearance: none;
   width: 100%;
@@ -291,7 +291,7 @@ a:hover {
 .carousel-nav {
   bottom: 0;
   right: 0;
-  background-color: #353535;
+  background-color: #383838;
 }
 
 .carousel-nav span {
@@ -321,7 +321,7 @@ a:hover {
 }
 
 .item-cta-area a:first-child {
-  border-right: 1px solid #353535;
+  border-right: 1px solid #383838;
 }
 
 .hot-ads,
@@ -383,10 +383,6 @@ a:hover {
     width: 115px;
   }
 
-  .nav-links {
-    width: 90%;
-  }
-
   .nav-cta,
   .navbar-brand {
     top: 0;
@@ -433,10 +429,6 @@ a:hover {
 @media (min-width: 992px) {
   .user-area {
     width: 230px;
-  }
-
-  .nav-links {
-    width: 632px;
   }
 
   .search-area {

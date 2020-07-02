@@ -69,11 +69,11 @@ body {
 }
 
 .pop-list a {
-  color: #353535;
+  color: #383838;
 }
 
 .pop-list:hover {
-  background-color: #353535;
+  background-color: #383838;
 }
 
 .pop-list:hover a {

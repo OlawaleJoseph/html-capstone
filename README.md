@@ -2,7 +2,7 @@
 
 > This a is an Online Car Store.
 
-![screenshot](screen.png)
+![screenshot](assets/images/screen.png)
 
 Additional description about the project and its features.
 
