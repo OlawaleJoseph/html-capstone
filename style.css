@@ -1,0 +1,478 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+@font-face {
+  font-family: "Gotham Bold";
+  src: url('./assets/fonts/Gotham\ Bold.otf');
+}
+
+@font-face {
+  font-family: "Gotham Rounded Light";
+  src: url('./assets/fonts/Gotham\ Rounded\ Light.otf');
+}
+
+@font-face {
+  font-family: "Helvetica Neue Light";
+  src: url('./assets/fonts/Helvetica45Light_22437.ttf');
+}
+
+@font-face {
+  font-family: "Helvetica Neue Medium";
+  src: url('./assets/fonts/Helvetica65Medium_22443.ttf');
+}
+
+@font-face {
+  font-family: "Helvetica Neue Bold";
+  src: url('./assets/fonts/HelveticaNeueBold.otf');
+}
+
+body {
+  background-color: #fff;
+}
+
+.wrapper {
+  max-width: 1310px;
+  margin: 0 auto;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+.container-fluid {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.gray-text {
+  color: #888 !important;
+}
+
+.dark-text {
+  color: #383838;
+}
+
+.bg-light-gray {
+  background-color: #f8f8f8;
+}
+
+.reddish-text {
+  color: #d35266;
+}
+
+.reddish-bg {
+  background-color: #d35266;
+}
+
+.helvetica-light {
+  font-family: "Helvetica Neue Light", Arial, sans-serif;
+}
+
+.helvetica-medium {
+  font-family: "Helvetica Neue Medium", Arial, sans-serif;
+}
+
+.helvetica-bold {
+  font-family: "Helvetica Neue Bold", Arial, sans-serif;
+}
+
+.gotham-light {
+  font-family: "Gotham Rounded", Georgia, "Times New Roman", Times, serif;
+}
+
+.gotham-bold {
+  font-family: "Gotham Bold", Georgia, "Times New Roman", Times, serif;
+}
+
+.header {
+  height: 55px;
+  background-color: #383838;
+}
+
+nav {
+  height: 50px;
+}
+
+.navbar-brand {
+  width: 99px;
+  position: relative;
+  top: -16px;
+}
+
+.nav-cta {
+  position: relative;
+  top: -15px;
+}
+
+.btn,
+.plus {
+  position: relative;
+  overflow: hidden;
+  transition: all 1s;
+  z-index: 0;
+}
+
+.btn::before,
+.plus::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #383838;
+  transform: translateX(-100%);
+  overflow: hidden;
+  transition: all 1s;
+  z-index: -1;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.plus {
+  border: 1px solid #dfdfdf;
+  width: 30px;
+  height: 30px;
+  color: #d5d5d5;
+  padding-left: 9px;
+  font-size: 1.2rem;
+}
+
+.btn:hover,
+.btn:hover a,
+.plus:hover {
+  color: #fff !important;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: 1px solid #383838;
+}
+
+.btn:hover::before,
+.plus:hover::before {
+  transform: translateX(0);
+}
+
+.border-top {
+  border-top: 1px solid #dfdfdf;
+}
+
+.logo-car-image {
+  top: 6px;
+  transition: all ease-in-out 2s;
+  animation: moveCar 2s ease-out, rotateCar 0.8s 2s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveCar {
+  from {
+    left: -112%;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+@keyframes rotateCar {
+  from {
+    transform: rotateY(0);
+  }
+
+  to {
+    transform: rotateY(180deg);
+  }
+}
+
+.user-area {
+  width: 75px;
+}
+
+.nav-item .nav-link:hover {
+  color: #d35266 !important;
+}
+
+/***************** USER PROFILE ****************/
+
+.user-profile-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid #d35266;
+  overflow: hidden;
+}
+
+/* Jumbo */
+.jumbo {
+  background:
+    linear-gradient(rgba(211, 82, 102, 0.8), rgba(211, 82, 102, 0.8)),
+    url("./assets/images/red-ferrari-337909.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.car-categories {
+  background: #fff url("./assets/images/sort-down.png") no-repeat left 0.75rem center/8px 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+}
+
+/* CART */
+.cart-items {
+  top: -3px;
+  right: -10px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #d35266;
+}
+
+.cart-items small {
+  top: -0.2rem;
+}
+
+/****************** CARD ****************/
+.card {
+  height: 305px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.item-img {
+  width: 100%;
+  height: 180px;
+}
+
+.item-info {
+  margin-bottom: 0.5rem;
+}
+
+.item-name {
+  margin-top: 0.7rem;
+  width: 70%;
+}
+
+.item-status {
+  margin-top: 0.2rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.item-location {
+  margin-bottom: 0.3rem;
+}
+
+.add-icon {
+  border: 1px solid #888;
+  font-weight: 900;
+  font-size: 1.5rem;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 2px;
+}
+
+.price {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.7rem;
+}
+
+.carousel-nav {
+  bottom: 0;
+  right: 0;
+  background-color: #383838;
+}
+
+.carousel-nav span {
+  color: #d35266;
+}
+
+.category-nav i {
+  font-size: 1.5rem;
+  top: 50%;
+}
+
+.carousel-nav span i {
+  width: 30px;
+  height: 30px;
+  font-size: 1.5rem;
+  padding-top: 2px;
+  cursor: pointer;
+}
+
+.shadow {
+  box-shadow: 0.2px 1px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.item-cta-area {
+  width: max-content;
+  border-radius: 5px;
+}
+
+.item-cta-area a:first-child {
+  border-right: 1px solid #383838;
+}
+
+.hot-ads,
+.jumbo-body {
+  max-width: 875px;
+}
+
+.section-header {
+  border-bottom: 1px solid #888;
+}
+
+.cards-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.prev {
+  left: -5px;
+}
+
+.next {
+  top: 0;
+  right: -5px;
+}
+
+.bn {
+  display: grid;
+  grid-template-columns: repeat(5, 320px);
+}
+
+.item {
+  width: 100%;
+}
+
+.bordered {
+  border: 1px solid #888;
+}
+
+.category-image {
+  width: 35px;
+}
+
+.footer-nav {
+  max-width: 450px;
+  margin: 10px auto;
+}
+
+.font-13 {
+  font-size: 13px;
+}
+
+.no-animation {
+  animation: none;
+}
+
+@media (min-width: 768px) {
+  .user-area {
+    width: 115px;
+  }
+
+  .nav-cta,
+  .navbar-brand {
+    top: 0;
+  }
+
+  .car-categories {
+    flex: 1;
+    margin-right: 2px;
+  }
+
+  .search-area {
+    flex: 3;
+  }
+
+  .search-area input {
+    flex: 3;
+  }
+
+  .search-area button {
+    flex: 1;
+  }
+
+  .card-border {
+    border: none;
+    box-shadow: none;
+  }
+
+  .category-nav {
+    height: 100%;
+    width: 11%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 99;
+  }
+
+  .category-items {
+    max-width: 35%;
+  }
+
+  .category-items:first-child {
+    margin-left: -192px;
+  }
+}
+
+@media (min-width: 992px) {
+  .user-area {
+    width: 230px;
+  }
+
+  .search-area {
+    flex: 4;
+  }
+
+  .search-area label {
+    flex: 4;
+    margin-right: 2px;
+  }
+
+  .car-nav-left {
+    top: 50%;
+    left: -53px;
+  }
+
+  .car-nav-right {
+    top: 50%;
+    right: -53px;
+  }
+
+  .car-nav-left,
+  .car-nav-right {
+    display: block;
+    top: 50%;
+    font-size: 2.2rem;
+    color: #d35266;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #888;
+    border-radius: 50%;
+    z-index: 50;
+  }
+
+  .category-nav {
+    width: 6%;
+  }
+
+  .category-items {
+    max-width: 20%;
+  }
+
+  .category-items:first-child {
+    margin-left: -160px;
+  }
+}

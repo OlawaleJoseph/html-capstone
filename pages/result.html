@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAR STORE</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/result.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="navbar-brand">
+          <a href="#">
+            <div class="logo-car-image position-relative">
+              <img class="img-fluid" src="../assets/images/car-logo1.png" alt="Company Logo">
+            </div>
+            <div class="logo-road- position-relative">
+              <img class="img-fluid" src="../assets/images/road-logo1.png" alt="Comapny Logo">
+            </div>
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav justify-content-md-start nav-links mr-auto gotham-light"
+          >
+            <li class="nav-item active px-2">
+              <a class="nav-link gray-text text-uppercase" href="index.html"
+                ><span class="nav-icon pr-2"><i class="fas fa-home"></i></span
+                ><span class="sr-only">(current)</span
+                ><span class="d-none d-lg-inline">Home</span></a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link gray-text text-uppercase" href="#"
+                ><span class="nav-icon pr-2"><i class="fas fa-box"></i></span
+                ><span class="d-none d-lg-inline">collections</span></a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link gray-text text-uppercase" href="#"
+                ><span class="nav-icon pr-2"><i class="fas fa-info"></i></span
+                ><span class="d-none d-lg-inline">about</span></a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link gray-text text-uppercase" href="#"
+                ><span class="nav-icon pr-2"
+                  ><i class="fas fa-address-book"></i></span
+                ><span class="d-none d-lg-inline">contact</span></a
+              >
+            </li>
+            <li class="nav-item px-2 reddish-bg">
+              <a class="nav-link text-white text-uppercase" href="#"
+                ><span class="nav-icon pr-2"><i></i></span>post an ad</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex justify-content-between nav-cta">
+          <div
+            class="user-area d-flex justify-content-between align-items-center"
+          >
+            <div class="cart position-relative d-none d-md-block pt-2">
+              <i class="fas fa-envelope gray-text"></i>
+              <span class="cart-items position-absolute"
+                ><small class="position-relative">3</small></span
+              >
+            </div>
+            <div class="cart position-relative pt-2">
+              <i class="fas fa-shopping-cart gray-text"></i>
+              <span class="cart-items position-absolute"
+                ><small class="position-relative">5</small></span
+              >
+            </div>
+            <div class="user-profile d-flex align-items-center">
+              <span class="user-name d-none d-lg-inline pr-1 text-white"
+                >Michael Smith</span
+              >
+              <div class="user-profile-img">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  alt="User Profile Image"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler ml-3"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon bg-secondary rounded-1"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="jumbotron mb-0 rounded-0 jumbo">
+        <div class="jumbo-body container-fluid text-white">
+          <h1
+            class="display-3 font-weight-bold position-relative jumbo-title mt-0"
+          >
+            JOIN THE RIDE
+          </h1>
+          <p class="text-capitalize">
+            Over 1,000,000 cars waiting to be owned
+          </p>
+          <div class="position-relative d-md-flex jumbo-body mx-auto">
+            <select class="px-4 py-2 car-categories border-0" name="category">
+              <option class="text-muted py-2" value="all" selected
+                >All Catgories</option
+              >
+              <option value="sedan" class="py-2">Sedan</option>
+              <option value="sport" class="py-2">Saloon</option>
+              <option value="vintage" class="py-2">Vintage</option>
+              <option value="luxury" class="py-2">Luxury car</option>
+              <option value="bus" class="py-2">Bus</option>
+              <option value="trucks" class="py-2">Trucks</option>
+            </select>
+            <div class="search-area mt-2 d-md-flex mt-md-0">
+              <input
+                class="w-100 py-2 px-2 border-0 mr-1 mb-2 mb-md-0"
+                type="text"
+                name="search"
+                placeholder="What do you want to Search for?"
+              />
+              <input
+                class="w-100 py-2 px-2 border-0"
+                type="text"
+                name="search"
+                placeholder="Prefrred Location?"
+              />
+              <a class="gray-text position-relative btn bg-dark gray-text mt-1 mt-md-0 rounded-0 ml-md-2" href="result.html"
+                    >Search</a
+                  >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="result row m-0 position-relative">
+      <div class="d-none d-md-block col-md-4 col-lg-3">
+        <div class="mobile-filter w-75 ml-auto py-2">
+          <div class="mb-2">
+            <div class="d-inline mr-4">
+              <input type="checkbox" name="condition" id="used" value="used" />
+              <label for="used">Used</label>
+            </div>
+            <div class="d-inline">
+              <input type="checkbox" name="condition1" id="new" value="new" />
+              <label for="new">New</label>
+            </div>
+          </div>
+
+          <div class="mb-2">
+            <h5 class="pb-2 border-bottom">Type</h5>
+            <div>
+              <input type="checkbox" name="type" value="luxury" id="luxury" />
+              <label for="luxury">Luxury </label>
+            </div>
+            <div>
+              <input type="checkbox" name="type" value="sedan" id="sedan" />
+              <label for="sedan">Sedan</label>
+            </div>
+            <div>
+              <input type="checkbox" name="type" value="saloon" id="saloon" />
+              <label for="sedan">Saloon</label>
+            </div>
+            <div>
+              <input type="checkbox" name="type" value="sedan" id="sedan2" />
+              <label for="sedan2">Vintage</label>
+            </div>
+            <div>
+              <input type="checkbox" name="type" value="2 doors" id="d2"/>
+              <label for="d2">2 doors</label>
+            </div>
+            <div>
+              <input type="checkbox" name="type" value="4 doors" id="d4"/>
+              <label for="d4">4 doors</label>
+            </div>
+            <div>
+              <input type="checkbox" name="type" value="electric" id="electric" />
+              <label for="electric">Electric</label>
+            </div>
+          </div>
+
+          <div class="mb-2">
+            <h5 class="pb-2 border-bottom">Price Range</h5>
+            <div>
+              <input type="checkbox" name="price1" value="1" id="p1"/>
+              <label for="p1">$10,000 - $15,000</label>
+            </div>
+            <div>
+              <input type="checkbox" name="price2" value="2" id="p2"/>
+              <label for="p2">$15,001 - $20,000</label>
+            </div>
+            <div>
+              <input type="checkbox" name="price3" value="3" id="p3" />
+              <label for="p3">$20,001 - $25,000</label>
+            </div>
+            <div>
+              <input type="checkbox" name="price4" value="4" id="p4"/>
+              <label for="p4">$25,001 - $30,000</label>
+            </div>
+            <div>
+              <input type="checkbox" name="price5" value="5" id="p5" />
+              <label for="p5">$30,001 - $35,000</label>
+            </div>
+            <div>
+              <input type="checkbox" name="price6" value="6" id="p6" />
+              <label for="p6">$35,001 - $40,000</label>
+            </div>
+            <div>
+              <input type="checkbox" name="price7" value="7" id="p7" />
+              <label for="p7">$40,001+</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-8 col-lg-9 result-list px-0">
+        <h6 class="border-bottom border-md-none container-fluid px-4 py-2 mb-0">138 results found</h6>
+        <div class="border-top d-md-none border-bottom">
+          <div>
+            <div class="container-fluid px-4">
+              <div class="d-inline">
+                <div class="d-inline mr-4">
+                  <input
+                    type="checkbox"
+                    name="condition"
+                    id="used1"
+                    value="used"
+                  />
+                  <label for="used">Used</label>
+                </div>
+                <div class="d-inline">
+                  <input
+                    type="checkbox"
+                    name="condition1"
+                    id="new1"
+                    value="new"
+                  />
+                  <label for="new">New</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex px-4">
+              <select class="car-categories pl-5 mb-2 rounded" name="type">
+                <option value="1" selected>TYPE</option>
+                <option value="2">Sedan</option>
+                <option value="3">Luxury</option>
+                <option value="4">Saloon</option>
+                <option value="5">Electric</option>
+                <option value="6">2 doors</option>
+                <option value="7">4 doors</option>
+                <option value="8">Bus</option>
+                <option value="9">Truck</option>
+              </select>
+
+              <select class="car-categories pl-5 rounded" name="price">
+                <option value="1" selected>PRICE</option>
+                <option value="2">$10,000 - $15,000</option>
+                <option value="3">$15,001 - $20,000</option>
+                <option value="4">$20,001 - $25,000</option>
+                <option value="5">$25,001 - $30,000</option>
+                <option value="6">$30,001 - $35,000</option>
+                <option value="7">$35,001 - $40,000</option>
+                <option value="8">$40,001+</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="mb-3 position-relative search-item p-3">
+          <div class="row no-gutters">
+            <div class="col-md-6 col-lg-5 position-relative">
+              <img
+                src="../assets/images/mercedes-benz-3395531_1920.jpg"
+                class="card-img rounded-0 img-fluid car-img"
+                alt="Car Image"
+              />
+              <div class="carousel-nav position-absolute">
+                <span class="text-center"
+                  ><i class="fas fa-angle-left"></i
+                ></span>
+                <span class="text-center"
+                  ><i class="fas fa-angle-right"></i
+                ></span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-7 px-2 pl-lg-4">
+              <div class="card-body px-0">
+                <div class="d-flex justify-content-between">
+                  <a href="#">
+                    <h5 class="card-title text-capitalize gray-text mb-1">
+                      mercedes benz (g wagon)
+                    </h5>
+                  </a>
+                  <div class="position-relative">
+                    <input class="d-none" type="checkbox" id="check1">
+                    <ul
+                      class="list-unstyled shadow text-center more-item-info-list"
+                    >
+                      <li class="px-3 py-2 pop-list">
+                        <a class="text-capitalize" href="#"
+                          >Add to Collection</a
+                        >
+                      </li>
+                      <li class="px-3 py-2 pop-list">
+                        <a class="text-capitalize" href="#">Send a Message</a>
+                      </li>
+                      <li class="px-3 py-2 pop-list">
+                        <a class="text-capitalize" href="#">More Details</a>
+                      </li>
+                    </ul>
+                    <label for="check1" class="plus font-weight-bold">+</label>
+                  </div>
+                </div>
+                <p class="font-weight-bold reddish-text">10,000 Mileage</p>
+                <p class="card-text mb-2">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Provident voluptatibus.
+                </p>
+                <p class="card-text mb-2 text-capitalize">
+                  by: <span class="gray-text">john doe</span>
+                </p>
+                <p class="card-text mb- text-capitalize">
+                  <span class="font-weight-bold text-capitalize"
+                    >location:</span
+                  >
+                  <span class="gray-text text-capitalize"
+                    >san francisco,
+                    <span class="text-uppercase">ca</span> united states</span
+                  >
+                </p>
+                <div class="d-flex justify-content-end">
+                  <a href="#" class="btn reddish-bg text-white px-3 rounded-0"
+                    >$150,000</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-3 position-relative search-item p-3">
+          <div class="row no-gutters">
+            <div class="col-md-6 col-lg-5 position-relative">
+              <img
+                src="../assets/images/stefan-rodriguez-2AovfzYV3rc-unsplash.jpg"
+                class="card-img rounded-0 img-fluid car-img"
+                alt="Car Image"
+              />
+              <div class="carousel-nav position-absolute">
+                <span class="text-center"
+                  ><i class="fas fa-angle-left"></i
+                ></span>
+                <span class="text-center"
+                  ><i class="fas fa-angle-right"></i
+                ></span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-7 px-2 pl-lg-4">
+              <div class="card-body px-0">
+                <div class="d-flex justify-content-between">
+                  <a href="#">
+                    <h5 class="card-title text-capitalize gray-text mb-1">
+                      mercedes benz (g wagon)
+                    </h5>
+                  </a>
+                  <div class="position-relative">
+                    <input class="d-none" type="checkbox" id="check2">
+                    <ul
+                      class="list-unstyled shadow text-center more-item-info-list more-item-info-list2"
+                    >
+                      <li class="px-3 py-2 pop-list">
+                        <a class="text-capitalize" href="#"
+                          >Add to Collection</a
+                        >
+                      </li>
+                      <li class="px-3 py-2 pop-list">
+                        <a class="text-capitalize" href="#">Send a Message</a>
+                      </li>
+                      <li class="px-3 py-2 pop-list">
+                        <a class="text-capitalize" href="#">More Details</a>
+                      </li>
+                    </ul>
+                    <label for="check2" class="plus font-weight-bold">+</label>
+                  </div>
+                </div>
+                <p class="font-weight-bold reddish-text">100,000 Mileage</p>
+                <p class="card-text mb-2">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Provident voluptatibus.
+                </p>
+                <p class="card-text mb-2 text-capitalize">
+                  by: <span class="gray-text">john doe</span>
+                </p>
+                <p class="card-text mb- text-capitalize">
+                  <span class="font-weight-bold text-capitalize"
+                    >location:</span
+                  >
+                  <span class="gray-text text-capitalize"
+                    >san francisco,
+                    <span class="text-uppercase">ca</span> united states</span
+                  >
+                </p>
+                <div class="d-flex justify-content-end">
+                  <a href="#" class="btn reddish-bg text-white px-3 rounded-0"
+                    >$150,000</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="car-nav"></div>
+        </div>
+        <div class="mb-3 position-relative search-item p-3">
+          <div class="row no-gutters">
+            <div class="col-md-6 col-lg-5 position-relative">
+              <img
+                src="../assets/images/danny-larsen-zmwdbmAcQ6M-unsplash.jpg"
+                class="card-img rounded-0 img-fluid car-img"
+                alt="Car Image"
+              />
+              <div class="carousel-nav position-absolute">
+                <span class="text-center"
+                  ><i class="fas fa-angle-left"></i
+                ></span>
+                <span class="text-center"
+                  ><i class="fas fa-angle-right"></i
+                ></span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-7 px-2 pl-lg-4">
+              <div class="card-body px-0">
+                <div class="d-flex justify-content-between">
+                  <a href="#">
+                    <h5 class="card-title text-capitalize gray-text mb-1">
+                      Blue Ferrari
+                    </h5>
+                  </a>
+                  <div class="position-relative">
+                    <input class="d-none" type="checkbox" id="check3">
+                    <ul
+                      class="list-unstyled shadow text-center more-item-info-list more-item-info-list3"
+                    >
+                      <li class="px-3 py-2 pop-list">
+                        <a class="text-capitalize" href="#"
+                          >Add to Collection</a
+                        >
+                      </li>
+                      <li class="px-3 py-2 pop-list">
+                        <a class="text-capitalize" href="#">Send a Message</a>
+                      </li>
+                      <li class="px-3 py-2 pop-list">
+                        <a class="text-capitalize" href="#">More Details</a>
+                      </li>
+                    </ul>
+                    <label for="check3" class="plus font-weight-bold">+</label>
+                  </div>
+                </div>
+                <p class="font-weight-bold reddish-text">0 Mileage</p>
+                <p class="card-text mb-2">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Provident voluptatibus.
+                </p>
+                <p class="card-text mb-2 text-capitalize">
+                  by: <span class="gray-text">john doe</span>
+                </p>
+                <p class="card-text mb- text-capitalize">
+                  <span class="font-weight-bold text-capitalize"
+                    >location:</span
+                  >
+                  <span class="gray-text text-capitalize"
+                    >san francisco,
+                    <span class="text-uppercase">ca</span> united states</span
+                  >
+                </p>
+                <div class="d-flex justify-content-end">
+                  <a href="#" class="btn reddish-bg text-white px-3 rounded-0"
+                    >$550,000</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="car-nav"></div>
+        </div>
+        <div class="mb-3 position-relative search-item p-3">
+          <div class="row no-gutters">
+            <div class="col-md-6 col-lg-5 position-relative">
+              <img
+                src="../assets/images/angus-gray-cExqvbd3S6w-unsplash.jpg"
+                class="card-img rounded-0 img-fluid car-img"
+                alt="Car Image"
+              />
+              <div class="carousel-nav position-absolute">
+                <span class="text-center"
+                  ><i class="fas fa-angle-left"></i
+                ></span>
+                <span class="text-center"
+                  ><i class="fas fa-angle-right"></i
+                ></span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-7 px-2 pl-lg-4">
+              <div class="card-body px-0">
+                <div class="d-flex justify-content-between">
+                  <a href="#">
+                    <h5 class="card-title text-capitalize gray-text mb-1">
+                      A nice vintage car
+                    </h5>
+                  </a>
+                  <div class="position-relative">
+                    <input class="d-none" type="checkbox" id="check4">
+                    <ul
+                      class="list-unstyled shadow text-center more-item-info-list more-item-info-list4"
+                    >
+                      <li class="px-3 py-2 pop-list">
+                        <a class="text-capitalize" href="#"
+                          >Add to Collection</a
+                        >
+                      </li>
+                      <li class="px-3 py-2 pop-list">
+                        <a class="text-capitalize" href="#">Send a Message</a>
+                      </li>
+                      <li class="px-3 py-2 pop-list">
+                        <a class="text-capitalize" href="#">More Details</a>
+                      </li>
+                    </ul>
+                    <label for="check4" class="plus font-weight-bold">+</label>
+                  </div>
+                </div>
+                <p class="font-weight-bold reddish-text">3,000 Mileage</p>
+                <p class="card-text mb-2">
+                  A good vintage car for the oldand young. 
+                </p>
+                <p class="card-text mb-2 text-capitalize">
+                  by: <span class="gray-text">john doe</span>
+                </p>
+                <p class="card-text mb- text-capitalize">
+                  <span class="font-weight-bold text-capitalize"
+                    >location:</span
+                  >
+                  <span class="gray-text text-capitalize"
+                    >san francisco,
+                    <span class="text-uppercase">ca</span> united states</span
+                  >
+                </p>
+                <div class="d-flex justify-content-end">
+                  <a href="#" class="btn reddish-bg text-white px-3 rounded-0"
+                    >$150,000</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="car-nav"></div>
+        </div>
+        <div class="mb-3 position-relative search-item p-3">
+          <div class="row no-gutters">
+            <div class="col-md-6 col-lg-5 position-relative">
+              <img
+                src="../assets/images/audi-1889696_1920.jpg"
+                class="card-img rounded-0 img-fluid car-img"
+                alt="Car Image"
+              />
+              <div class="carousel-nav position-absolute">
+                <span class="text-center"
+                  ><i class="fas fa-angle-left"></i
+                ></span>
+                <span class="text-center"
+                  ><i class="fas fa-angle-right"></i
+                ></span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-7 px-2 pl-lg-4">
+              <div class="card-body px-0">
+                <div class="d-flex justify-content-between">
+                  <a href="#">
+                    <h5 class="card-title text-capitalize gray-text mb-1">
+                      Hyudai iX35
+                    </h5>
+                  </a>
+                  <div class="position-relative">
+                    <input class="d-none" type="checkbox" id="check5">
+                    <ul
+                      class="list-unstyled shadow text-center more-item-info-list more-item-info-list5"
+                    >
+                      <li class="px-3 py-2 pop-list">
+                        <a class="text-capitalize" href="#"
+                          >Add to Collection</a
+                        >
+                      </li>
+                      <li class="px-3 py-2 pop-list">
+                        <a class="text-capitalize" href="#">Send a Message</a>
+                      </li>
+                      <li class="px-3 py-2 pop-list">
+                        <a class="text-capitalize" href="#">More Details</a>
+                      </li>
+                    </ul>
+                    <label for="check5" class="plus font-weight-bold">+</label>
+                  </div>
+                </div>
+                <p class="font-weight-bold reddish-text">0 Mileage</p>
+                <p class="card-text mb-2">
+                  A brand New sleek hyudai car for premium feel 
+                </p>
+                <p class="card-text mb-2 text-capitalize">
+                  by: <span class="gray-text">john doe</span>
+                </p>
+                <p class="card-text mb- text-capitalize">
+                  <span class="font-weight-bold text-capitalize"
+                    >location:</span
+                  >
+                  <span class="gray-text text-capitalize"
+                    >san francisco,
+                    <span class="text-uppercase">ca</span> united states</span
+                  >
+                </p>
+                <div class="d-flex justify-content-end">
+                  <a href="#" class="btn reddish-bg text-white px-3 rounded-0"
+                    >$150,000</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="car-nav"></div>
+        </div>
+        <div class="mb-3 position-relative search-item p-3">
+          <div class="row no-gutters">
+            <div class="col-md-6 col-lg-5 position-relative">
+              <img
+                src="../assets/images/cam-bowers-cAbH8B-14Vo-unsplash.jpg"
+                class="card-img rounded-0 img-fluid car-img"
+                alt="Car Image"
+              />
+              <div class="carousel-nav position-absolute">
+                <span class="text-center"
+                  ><i class="fas fa-angle-left"></i
+                ></span>
+                <span class="text-center"
+                  ><i class="fas fa-angle-right"></i
+                ></span>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-7 px-2 pl-lg-4">
+              <div class="card-body px-0">
+                <div class="d-flex justify-content-between">
+                  <a href="#">
+                    <h5 class="card-title text-capitalize gray-text mb-1">
+                      Audi 8r5
+                    </h5>
+                  </a>
+                  <div class="position-relative">
+                    <input class="d-none" type="checkbox" id="check6">
+                    <ul
+                      class="list-unstyled shadow text-center more-item-info-list more-item-info-list6"
+                    >
+                      <li class="px-3 py-2 pop-list">
+                        <a class="text-capitalize" href="#"
+                          >Add to Collection</a
+                        >
+                      </li>
+                      <li class="px-3 py-2 pop-list">
+                        <a class="text-capitalize" href="#">Send a Message</a>
+                      </li>
+                      <li class="px-3 py-2 pop-list">
+                        <a class="text-capitalize" href="#">More Details</a>
+                      </li>
+                    </ul>
+                    <label for="check6" class="plus font-weight-bold">+</label>
+                  </div>
+                </div>
+                <p class="font-weight-bold reddish-text">0 Mileage</p>
+                <p class="card-text mb-2">
+                  A brand New Audi car for sale
+                </p>
+                <p class="card-text mb-2 text-capitalize">
+                  by: <span class="gray-text">john doe</span>
+                </p>
+                <p class="card-text mb- text-capitalize">
+                  <span class="font-weight-bold text-capitalize"
+                    >location:</span
+                  >
+                  <span class="gray-text text-capitalize"
+                    >san francisco,
+                    <span class="text-uppercase">ca</span> united states</span
+                  >
+                </p>
+                <div class="d-flex justify-content-end">
+                  <a href="#" class="btn reddish-bg text-white px-3 rounded-0"
+                    >$150,000</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="car-nav"></div>
+        </div>
+      </div>
+      </div>
+    <div>
+      <ul class="d-flex list-unstyled justify-content-center pagination">
+        <li class="mx-2"><a class="bg-white px-2 py-1 gray-text rounded" href="#">1</a></li>
+        <li class="mx-2"><a class="bg-white px-2 py-1 gray-text rounded" href="#">2</a></li>
+        <li class="mx-2"><a class="bg-white px-2 py-1 gray-text rounded" href="#">4</a></li>
+        <li class="mx-2">...</li>
+        <li class="mx-2"><a class="bg-white px-2 py-1 gray-text" href="#">7</a></li>
+      </ul>
+    </div>
+    <footer class="container-fluid mb-4">
+      <div class="text-center">
+        <div class="navbar-brand mx-auto">
+          <a href="#">
+            <div class="logo-car-image  no-animation position-relative">
+              <img class="img-fluid" src="../assets/images/car-logo1.png" alt="Company Logo">
+            </div>
+            <div class="logo-road- position-relative">
+              <img class="img-fluid" src="../assets/images/road-logo1.png" alt="Comapny Logo">
+            </div>
+          </a>
+        </div>
+      </div>
+      <ul class="list-unstyled d-flex justify-content-between footer-nav">
+        <li class="px-2 px-md-3 py-2"><a class="gray-text" href="#">Top</a></li>
+        <li class="px-2 px-md-3 py-2"><a class="gray-text" href="#">Home</a></li>
+        <li class="px-2 px-md-3 py-2"><a class="gray-text" href="#">About</a></li>
+        <li class="px-2 px-md-3 py-2"><a class="gray-text" href="#">Contact</a></li>
+        <li class="px-2 px-md-3 py-2"><a class="gray-text" href="#">Hot Ads</a></li>          
+      </ul>
+      <div class="border-top"></div>
+      <p class="gray-text font-13 text-capitalize pt-4 footer-nav text-center">Coypright&copy; 2020, all rights reserved. designed By Adedeko Olawale</p>
+  </footer>
+  </body>
+</html>
