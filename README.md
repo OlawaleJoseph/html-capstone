@@ -1,16 +1,26 @@
 # HTML & CSS Capstone Project
 
-> This a is an Online Car Store.
+> This a is an Online Car Store where users can buy and sell their cars, either old or new.
+  This project is built as my Capstone Project for the HTML and CSS section at Microvese.
+  Building this project has helped to solidify my understanding of the HTMl, CSS, BOOTSTRAP, Animations and Transitions. 
+
 
 ![screenshot](assets/images/screen.png)
 
-Additional description about the project and its features.
+## Implementation
+- Users can update their profile image and have it displayed at the top of the page.
+- Users can see the list of cars grouped into different categories such as Luxury, Sedan, Sallon, Vintage... 
+- Users can Search for a car by name, model or location
+- On the results page, Users can filter their search by parameters should such as price, new, used...
+- The Footer section has a navigation area for easy access.
+- The company logo is animated to simulate a moving car.
 
 ## Built With
 
 - HTML5, CSS3
 - BOOTSTRAP,
 - GIT, STYLELINT, WEBHINT, GITHUB ACTIONS
+- This project was built using flexbox and grid for layout and alignment.
 
 ## Live Demo
 
@@ -18,10 +28,6 @@ Additional description about the project and its features.
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
@@ -49,7 +55,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/OlawaleJoseph/newsweek-clone/issues).
+Feel free to check the [issues page](https://github.com/OlawaleJoseph/html-capstone/issues).
 
 ## Show your support
 
